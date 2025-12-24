@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Magic Particles</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="overlay">
+        <div class="card">
+            <h1>Partículas Mágicas 3D</h1>
+            <p>Controle com as mãos ou pelos botões.</p>
+            <button id="start-btn">Iniciar Experiência</button>
+        </div>
+    </div>
+
+    <div id="ui">
+        <div id="status">AGUARDANDO CÂMERA...</div>
+        <div id="menu-formas">
+            <button class="shape-btn" onclick="changeShape(0)">Cubo</button>
+            <button class="shape-btn" onclick="changeShape(1)">Coração</button>
+            <button class="shape-btn" onclick="changeShape(2)">Planeta Terra</button>
+            <button class="shape-btn" onclick="changeShape(3)">Terra Aberta</button>
+            <button class="shape-btn" onclick="changeShape(4)">Borboleta</button>
+        </div>
+    </div>
+
+    <video id="video-preview" autoplay playsinline></video>
+    <script src="script.js"></script>
+</body>
+</html>
