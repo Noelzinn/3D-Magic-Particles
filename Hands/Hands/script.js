@@ -100,7 +100,7 @@ function onResults(results) {
         particles.rotation.y += (rotY - particles.rotation.y) * 0.1;
         particles.rotation.x += (rotX - particles.rotation.x) * 0.1;
 
-        // --- 3. POSIÇÃO E ZOOM (O que você já tinha) ---
+        // --- 3. POSIÇÃO E ZOOM ---
         const targetX = (0.5 - indexTip.x) * 50;
         const targetY = (0.5 - indexTip.y) * 40;
         const handSize = Math.sqrt(
